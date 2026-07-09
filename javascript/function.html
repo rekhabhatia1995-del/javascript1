@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> function </h1>
+    <p id="demo"> </p>
+    <script>
+        function add() {
+            let a = 5;
+            let b = 10;
+            document.getElementById("demo").innerHTML = a + b;
+        }
+
+        add();
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+</head>
+<body>
+
+    <h1 id="demo">Welcome to My Website</h1>
+
+    <button onclick="darkMode()">Dark Mode</button>
+    <button onclick="lightMode()"> light Mode</button>
+
+    <script>
+        function darkMode() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        }
+         function  lightMode() {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+        }
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        If Condition
+    </h1>
+    <p Id="demo"> </p>
+    <script>
+        let age = 16;
+        text = "you can drive";
+        if (age <= 18) {
+            text = "you cannot drive";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body> -->
+
+<!-- </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input id="mail" tpye="mail id" placeholder=" Enter Email" />
+        <input id="password" type="pasword" placeholder="Enter password" />
+    </div>
+    <div>
+        <button onclick="checkpassword()">
+            login
+        </button>
+        <h1 Id="demo"> </h1>
+    </div>
+    <script>
+        function checkpassword() {
+            let Email = document.getElementById("mail").value;
+            let pw = document.getElementById("password").value;
+        
+        if (Email == "rekhabhatia1995@gmail.com" && pw == "1234") {
+            document.getElementById("demo").innerHTML = "login sucessful";
+        } else {
+            document.getElementById("demo").innerHTML = "invalid password";
+        }
+    }
+
+    </script>
+
+</body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-2xl shadow-lg w-96">
+        <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">
+            Login Form
+        </h1>
+
+        <div class="space-y-4">
+            <input
+                id="mail"
+                type="email"
+                placeholder="Enter Email"
+                class="w-full border border-gray-300 rounded-lg p-3 "
+            >
+
+            <input id="password"type="password"placeholder="Enter Password"class="w-full border border-gray-300 rounded-lg p-3"
+            >
+        </div>
+
+        <button
+            onclick="checkpassword()"
+            class="w-full bg-blue-600 text-white py-3 rounded-lg mt-5 hover:bg-blue-700 "
+        >
+            Login
+        </button>
+
+        <h2 id="demo" class="text-center mt-4 text-lg font-semibold"></h2>
+    </div>
+
+    <script>
+        function checkpassword() {
+            let Email = document.getElementById("mail").value;
+            let pw = document.getElementById("password").value;
+
+            if (
+                Email == "rekhabhatia1995@gmail.com" && pw == "1234"
+            ) {
+                document.getElementById("demo").innerHTML = "Login Successful";
+            } else {
+                document.getElementById("demo").innerHTML = "Invalid Email or Password";
+            }
+        }
+    </script>
+
+</body>
+</html>

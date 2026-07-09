@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="flex flex-col md:flex-row justify-between items-center shadow p-2 ">
+        <button onclick="togglemenu()" class="md:hidden text-3xl">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
+        <div id="sidebar" class="justify-center">
+            <div>
+                <ul class="flex gap-4 font-bold text-2xl ">
+                    <li> Home </li>
+                    <li> About</li>
+                    <li> Contact Us</li>
+                    <li> Product</li>
+
+                </ul>
+            </div>
+            <div>
+                <button class="bg-green-500 font-bold text-xl p-2 rounded-xl border-2 border-black">
+                    login
+                </button>
+
+
+            </div>
+
+        </div>
+        <div>
+            <img class=" w-26 h-26"
+                src=" https://img.magnific.com/premium-vector/eqh-logo-design-initial-letter-eqh-monogram-logo-using-hexagon-shape_1101554-16445.jpg?semt=ais_hybrid&w=740&q=80 " />
+        </div>
+        <div>
+            <ul class="flex  flex-col md:flex-row gap-4 font-bold text-2xl ">
+                <li> Home </li>
+                <li> About</li>
+                <li> Contact Us</li>
+                <li> Product</li>
+
+            </ul>
+        </div>
+        <div>
+            <button class="bg-green-500 font-bold text-xl p-2 rounded-xl border-2 border-black">
+                login
+            </button>
+
+
+        </div>
+    </div>
+
+    <script>
+        function togglemenu() {
+            document.getElementById("sidebar").classlist.toggle("hidden")
+        }
+    </script>
+</body>
+
+</html>

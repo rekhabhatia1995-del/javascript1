@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="flex justify-between items-center shadow p-3">
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-3xl">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+
+    <!-- Logo -->
+    <div>
+        <img 
+        class="w-16 h-16 object-cover rounded-full"
+        src="https://img.magnific.com/premium-vector/eqh-logo-design-initial-letter-eqh-monogram-logo-using-hexagon-shape_1101554-16445.jpg?semt=ais_hybrid&w=740&q=80">
+    </div>
+
+
+    <!-- Menu -->
+    <div>
+        <ul class="hidden md:flex gap-6 font-bold text-xl">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+            <li>Product</li>
+        </ul>
+    </div>
+
+
+    <!-- Login Button -->
+    <div>
+        <button class="bg-green-500 font-bold text-xl px-4 py-2 rounded-xl border-2 border-black">
+            Login
+        </button>
+    </div>
+
+</nav>
+
+
+</body>
+</html>

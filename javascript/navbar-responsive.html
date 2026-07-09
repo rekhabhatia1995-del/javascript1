@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div class="flex  flex-col md:flex-row justify-between mt-4 items-center shadow   p-2">
+        <button onclick="togglemenu()" class="md:hidden text-3xl ">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png " class="h-16 w-16 " />
+        </div>
+        <div>
+            <ul id="menu" class="flex  flex-col md:flex-row font-bold text-2xl gap-4 text-green-500">
+                <li> Home</li>
+                <li> About</li>
+                <li> project</li>
+                <li> Contact</li>
+            </ul>
+        </div>
+        <div class="gap-2 flex flex-col md:flex-row ">
+            <button class=" w-full md:48 bg-green-300 text-white w-48 border-2 border-red-100 p-2 rounded-xl font-bold">
+                login
+            </button>
+            <button class=" w-full md:48 bg-white text-green w-48 border-2 border-red-100 p-2 rounded-xl font-bold">
+                sign up</button>
+        </div>
+    </div>
+
+<script> 
+    function togglemenu(){
+        document.getElementById("menu").classList.toggle("hidden");
+    }
+</script>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="flex items-center justify-between shadow p-2">
+
+    <div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT38V_w6LkpOF37Mts3QblVvdO5pgSkNujhA&s "
+        class="h-16 w-16" alt="logo" />
+    </div>
+
+    <button onclick="togglemenu()" class="md:hidden text-3xl" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  
+  <div class="hidden md:block px-2">
+    <ul class="flex text-xl text-green-500 gap-4 mt-2">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  
+  <div id="sidebar" class="fixed inset-0 z-50 hidden">
+    
+    <div class="absolute inset-0 bg-white"></div>
+
+
+    <div class="absolute left-0 top-0 h-full w-64 bg-white shadow p-4">
+      <div class="flex items-center justify-between">
+        <div class="font-bold text-lg">Menu</div>
+        <button onclick="closemenu()" class="text-2xl">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <ul class="mt-4 flex flex-col gap-3 text-xl text-green-600 font-bold">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <button class="mt-6 bg-red-200 border-2 border-yellow-300 rounded-xl p-2 w-full font-bold">
+        login
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function togglemenu() {
+      document.getElementById("sidebar").classList.remove("hidden");
+    }
+
+    function closemenu() {
+      document.getElementById("sidebar").classList.add("hidden");
+    }
+  </script>
+</body>
+
+</html>
